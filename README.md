@@ -2,19 +2,19 @@
 
 Équations allométriques pour estimer la biomasse forestière tropicale, avec une attention particulière à l'Afrique de l'Ouest.
 
-Tout est contenu dans un notebook autonome : **`allometrie_demo.ipynb`**. Il s'ouvre dans Google Colab ou Jupyter et se lance sans installation particulière, hormis les bibliothèques scientifiques usuelles (`numpy`, `pandas`, `matplotlib`).
+Tout est contenu dans un notebook autonome : `allometrie_demo.ipynb`. Il s'ouvre dans Google Colab ou Jupyter et se lance sans installation particulière, hormis les bibliothèques scientifiques usuelles (`numpy`, `pandas`, `matplotlib`).
 
 ## Pourquoi ce projet
 
-Une équation allométrique convertit des mesures simples relevées sur un arbre — diamètre, hauteur, densité du bois — en une estimation de sa biomasse aérienne.
+Une équation allométrique convertit des mesures simples relevées sur un arbre diamètre, hauteur, densité du bois en une estimation de sa biomasse aérienne.
 
 Les produits satellitaires de biomasse comme GEDI reposent sur des équations pantropicales génériques, calibrées majoritairement hors d'Afrique et appliquées partout sans distinction de type de forêt. Cela introduit un biais documenté sur le continent africain : sur des données de terrain ivoiriennes, GEDI sous-estime la biomasse des forêts denses de façon significative.
 
-Le choix de l'équation est donc une source d'erreur de premier ordre, en amont de tout modèle de télédétection. Ce projet rassemble plusieurs équations — pantropicales et africaines — et mesure l'écart entre elles.
+Le choix de l'équation est donc une source d'erreur de premier ordre, en amont de tout modèle de télédétection. Ce projet rassemble plusieurs équations — pantropicales et africaines et mesure l'écart entre elles.
 
 ## Ce que montre le notebook
 
-Le notebook démontre, chiffres à l'appui, que **le choix de l'équation change la biomasse estimée d'environ 46 % sur une forêt dense**, et que cet écart se concentre sur les gros arbres : de +7 % pour un arbre de 10 cm de diamètre à +55 % pour un arbre de 90 cm. Comme les gros arbres portent l'essentiel de la biomasse d'une forêt dense, c'est là que le choix pèse le plus.
+Le notebook démontre, chiffres à l'appui, que le choix de l'équation change la biomasse estimée d'environ 46 % sur une forêt dense, et que cet écart se concentre sur les gros arbres : de +7 % pour un arbre de 10 cm de diamètre à +55 % pour un arbre de 90 cm. Comme les gros arbres portent l'essentiel de la biomasse d'une forêt dense, c'est là que le choix pèse le plus.
 
 Il contient :
 
@@ -41,7 +41,7 @@ Ouvrir `allometrie_demo.ipynb` dans Colab (Fichier → Importer le notebook, ou 
 
 ## Ce que le notebook établit
 
-L'écart entre équations n'oppose pas « africain » à « pantropical » : les équations de Chave (pantropicale) et d'Aabeyir (Ghana) donnent des valeurs proches, tandis que celle de Ngomanda (forêt humide du Gabon) prédit plus lourd. Ce qui compte est le **type de forêt** sur lequel l'équation a été calibrée.
+L'écart entre équations n'oppose pas « africain » à « pantropical » : les équations de Chave (pantropicale) et d'Aabeyir (Ghana) donnent des valeurs proches, tandis que celle de Ngomanda (forêt humide du Gabon) prédit plus lourd. Ce qui compte est le type de forêt sur lequel l'équation a été calibrée.
 
 Conséquence : corriger la cible en amont, avec une équation adaptée au milieu, est un levier au moins aussi important que le choix du capteur ou du modèle dans un projet de cartographie de biomasse.
 
