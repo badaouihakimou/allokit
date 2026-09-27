@@ -10,7 +10,7 @@ Une équation allométrique convertit des mesures simples relevées sur un arbre
 
 Les produits satellitaires de biomasse comme GEDI reposent sur des équations pantropicales génériques, calibrées majoritairement hors d'Afrique et appliquées partout sans distinction de type de forêt. Cela introduit un biais documenté sur le continent africain : sur des données de terrain ivoiriennes, GEDI sous-estime la biomasse des forêts denses de façon significative.
 
-Le choix de l'équation est donc une source d'erreur de premier ordre, en amont de tout modèle de télédétection. Ce projet rassemble plusieurs équations — pantropicales et africaines et mesure l'écart entre elles.
+Le choix de l'équation est donc une source d'erreur de premier ordre, en amont de tout modèle de télédétection. Ce projet rassemble plusieurs équations pantropicales et africaines et mesure l'écart entre elles.
 
 ## Ce que montre le notebook
 
